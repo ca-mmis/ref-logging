@@ -2,21 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00d2b6d2-9073-48e9-a20c-3d9fce0f28d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/go.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logging/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logging/go.sum" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logging/logcli/cli.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logging/logcli/cli_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logging/logging" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logging/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logging/main_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logging/service/config.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logging/service/logging.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logging/service/logging_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logging/logcli/cli.go" beforeDir="false" afterPath="$PROJECT_DIR$/logging/logcli/cli.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logging/logcli/cli_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/logging/logcli/cli_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logging/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/logging/main_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logging/service/logging_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/logging/service/logging_test.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,86 +14,112 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="269" />
+    <option name="myElementSize" value="263" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logging/main.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logging/main_test.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="12" column="25" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/logging/service/logging.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logging/service/config.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logging/service/logging_test.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logging/go.mod">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logging/logcli/cli.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="26" column="6" lean-forward="true" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logging/logcli/cli_test.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="463">
-              <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
-              <folding>
-                <element signature="e#16#56#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/logging/main.go">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="216">
+                  <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/logging/main_test.go">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="342">
+                  <caret line="21" selection-start-line="21" selection-end-line="21" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/logging/service/logging.go">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-7">
+                  <caret line="25" column="52" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/logging/service/config.go">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/logging/service/logging_test.go">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-7">
+                  <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/logging/go.mod">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/logging/logcli/cli_test.go">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-278">
+                  <caret line="92" column="92" selection-start-line="92" selection-start-column="92" selection-end-line="92" selection-end-column="92" />
+                  <folding>
+                    <element signature="e#16#56#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/logging/logcli/cli.go">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="271">
+                  <caret line="31" column="54" lean-forward="true" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="54" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$USER_HOME$/go/pkg/mod/github.com/urfave/cli@v1.19.1/app.go">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="137">
+                  <caret line="260" column="13" selection-start-line="260" selection-start-column="13" selection-end-line="260" selection-end-column="13" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$USER_HOME$/go/pkg/mod/github.com/urfave/cli@v1.19.1/errors.go">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="90">
+                  <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -132,20 +147,20 @@
         <option value="$PROJECT_DIR$/logging/cli/cli.go" />
         <option value="$PROJECT_DIR$/logging/tests/main_tests.go" />
         <option value="$PROJECT_DIR$/logging/main_tests.go" />
-        <option value="$PROJECT_DIR$/logging/main_test.go" />
         <option value="$PROJECT_DIR$/logging/lib/logging.go" />
         <option value="$PROJECT_DIR$/logging/lib/config.go" />
         <option value="$PROJECT_DIR$/logging/lib/logging_test.go" />
         <option value="$PROJECT_DIR$/logging/service/config.go" />
         <option value="$PROJECT_DIR$/logging/service/logging.go" />
         <option value="$PROJECT_DIR$/logging/service/logging_test.go" />
-        <option value="$PROJECT_DIR$/logging/logcli/cli.go" />
         <option value="$PROJECT_DIR$/logging/main.go" />
+        <option value="$PROJECT_DIR$/logging/logcli/cli.go" />
         <option value="$PROJECT_DIR$/logging/logcli/cli_test.go" />
+        <option value="$PROJECT_DIR$/logging/main_test.go" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1720" />
     <option name="height" value="1417" />
@@ -202,7 +217,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/logging" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -246,6 +261,15 @@
       <directory value="$PROJECT_DIR$/logging" />
       <method v="2" />
     </configuration>
+    <configuration name="go test logcli" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="go" />
+      <working_directory value="$PROJECT_DIR$/logging/logcli" />
+      <framework value="gotest" />
+      <kind value="DIRECTORY" />
+      <directory value="$PROJECT_DIR$/logging/logcli" />
+      <filePath value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <configuration name="go test logging" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="go" />
       <working_directory value="$PROJECT_DIR$/logging" />
@@ -255,69 +279,86 @@
       <filePath value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <configuration name="logging_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="go" />
+      <working_directory value="$PROJECT_DIR$/logging/service" />
+      <framework value="gotest" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/logging/service/logging_test.go" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Go Build.go build github.com/ca-mmis/ref-logging/projects/go/logging" />
       <item itemvalue="Go Build.go build logging" />
       <item itemvalue="Go Test.go test logging" />
+      <item itemvalue="Go Test.go test logcli" />
+      <item itemvalue="Go Test.logging_test.go" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Go Test.go test logging" />
+        <item itemvalue="Go Test.logging_test.go" />
+        <item itemvalue="Go Test.go test logcli" />
       </list>
     </recent_temporary>
   </component>
   <component name="TestHistory">
-    <history-entry file="main_test_go - 2019.06.18 at 11h 26m 30s.xml">
-      <configuration name="main_test.go" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="go_test_logging - 2019.06.18 at 11h 28m 04s.xml">
+    <history-entry file="go_test_logging - 2019.06.19 at 17h 44m 58s.xml">
       <configuration name="go test logging" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="go_test_logging - 2019.06.18 at 11h 31m 18s.xml">
+    <history-entry file="go_test_logging - 2019.06.19 at 17h 50m 21s.xml">
       <configuration name="go test logging" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="go_test_logging - 2019.06.18 at 11h 33m 09s.xml">
+    <history-entry file="go_test_logging - 2019.06.19 at 17h 53m 17s.xml">
       <configuration name="go test logging" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="go_test_logging - 2019.06.18 at 11h 44m 31s.xml">
+    <history-entry file="go_test_logging - 2019.06.19 at 17h 55m 12s.xml">
       <configuration name="go test logging" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="go_test_logging - 2019.06.18 at 11h 45m 07s.xml">
+    <history-entry file="go_test_logging - 2019.06.19 at 18h 07m 28s.xml">
       <configuration name="go test logging" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="go_test_logging - 2019.06.18 at 11h 45m 35s.xml">
+    <history-entry file="go_test_logging - 2019.06.19 at 18h 09m 20s.xml">
       <configuration name="go test logging" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="go_test_logging - 2019.06.18 at 11h 49m 45s.xml">
+    <history-entry file="go_test_logging - 2019.06.19 at 18h 11m 35s.xml">
       <configuration name="go test logging" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="go_test_logging - 2019.06.19 at 08h 36m 15s.xml">
+    <history-entry file="go_test_logging - 2019.06.19 at 18h 11m 54s.xml">
+      <configuration name="go test logging" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="go_test_logging - 2019.06.19 at 18h 14m 14s.xml">
+      <configuration name="go test logging" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="go_test_logging - 2019.06.19 at 18h 15m 33s.xml">
       <configuration name="go test logging" configurationId="GoTestRunConfiguration" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1720" height="1417" extended-state="0" />
+    <frame x="0" y="23" width="3440" height="1417" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25268176" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09329017" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32981133" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32981133" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4997057" visible="true" weight="0.32981133" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.32981133" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32981133" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32981133" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32986626" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50029427" side_tool="true" weight="0.32981133" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="Coverage" order="4" side_tool="true" visible="true" weight="0.22109655" />
+      <window_info anchor="right" id="Coverage" order="4" side_tool="true" visible="true" weight="0.10888758" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -327,8 +368,20 @@
     <integration-enabled>true</integration-enabled>
     <proxy>direct</proxy>
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/logging/logcli/cli.go</url>
+          <line>43</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/go$go_test_logging.out" NAME="go test logging Coverage Results" MODIFIED="1560978358838" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/go$go_test_logging.out" NAME="go test logging Coverage Results" MODIFIED="1560993360953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/go$go_test_go.out" NAME="go test go Coverage Results" MODIFIED="1560978234064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/go$logging_test_go.out" NAME="logging_test.go Coverage Results" MODIFIED="1560883431765" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
@@ -344,62 +397,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logging/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logging/main_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/logging/service/config.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
+        <state>
           <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logging/service/logging.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="25" column="52" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/logging/go.mod">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
+        <state>
           <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logging/logcli/cli.go">
+    <entry file="file://$PROJECT_DIR$/logging/service/logging_test.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="26" column="6" lean-forward="true" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+        <state relative-caret-position="-7">
+          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/go/pkg/mod/github.com/urfave/cli@v1.19.1/errors.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/go/pkg/mod/github.com/urfave/cli@v1.19.1/app.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="260" column="13" selection-start-line="260" selection-start-column="13" selection-end-line="260" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/logging/logcli/cli_test.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+        <state relative-caret-position="-278">
+          <caret line="92" column="92" selection-start-line="92" selection-start-column="92" selection-end-line="92" selection-end-column="92" />
           <folding>
             <element signature="e#16#56#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logging/service/logging_test.go">
+    <entry file="file://$PROJECT_DIR$/logging/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+        <state relative-caret-position="216">
+          <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logging/service/logging.go">
+    <entry file="file://$PROJECT_DIR$/logging/logcli/cli.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="271">
+          <caret line="31" column="54" lean-forward="true" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logging/main_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
