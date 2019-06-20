@@ -5,13 +5,6 @@ import (
 	"testing"
 )
 
-func TestMetricsInvalidAWSCredentials(t *testing.T) {
-	_, err := Metrics()
-	if err == nil {
-		t.Error("Expecting error of type InvalidClientTokaenId")
-	}
-}
-
 func TestMetricsWithCredentials(t *testing.T) {
 	session := SessionConfig{
 		SessionRegion:    "us-west-2",

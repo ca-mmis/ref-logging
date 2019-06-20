@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00d2b6d2-9073-48e9-a20c-3d9fce0f28d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/logging/Taskfile.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logging/service/logging_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/logging/service/logging_test.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,11 +67,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/logging/service/logging_test.go">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="252">
-                  <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+                <state relative-caret-position="72">
+                  <caret line="7" selection-start-line="7" selection-end-line="7" />
                 </state>
               </provider>
             </entry>
@@ -80,17 +79,17 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/logging/go.mod">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="108">
-                  <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+                <state relative-caret-position="162">
+                  <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/logging/logcli/cli_test.go">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="370">
-                  <caret line="99" column="66" lean-forward="true" selection-start-line="99" selection-start-column="66" selection-end-line="99" selection-end-column="66" />
+                  <caret line="99" column="66" selection-start-line="99" selection-start-column="66" selection-end-line="99" selection-end-column="66" />
                 </state>
               </provider>
             </entry>
@@ -108,11 +107,20 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/logging/Taskfile.yml">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="180">
                   <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/../../.circleci/config.yml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="630">
+                  <caret line="35" column="48" lean-forward="true" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
                 </state>
               </provider>
             </entry>
@@ -173,13 +181,15 @@
         <option value="$PROJECT_DIR$/logging/main.go" />
         <option value="$PROJECT_DIR$/logging/main_test.go" />
         <option value="$PROJECT_DIR$/logging/logcli/cli.go" />
-        <option value="$PROJECT_DIR$/logging/service/logging_test.go" />
         <option value="$PROJECT_DIR$/logging/Taskfile.yml" />
         <option value="$PROJECT_DIR$/logging/logcli/cli_test.go" />
+        <option value="$PROJECT_DIR$/logging/.circleci/config.yml" />
+        <option value="$PROJECT_DIR$/../../.circleci/config.yml" />
+        <option value="$PROJECT_DIR$/logging/service/logging_test.go" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1720" />
     <option name="height" value="1417" />
@@ -376,15 +386,15 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1720" height="1417" extended-state="0" />
+    <frame x="-1" y="23" width="3440" height="1417" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19427891" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.09593879" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32981133" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4997057" visible="true" weight="0.32981133" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4997057" visible="true" weight="0.32981133" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -453,13 +463,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logging/go.mod">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/logging/logcli/cli.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="586">
@@ -481,10 +484,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logging/service/logging_test.go">
+    <entry file="file://$PROJECT_DIR$/logging/logcli/cli_test.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+        <state relative-caret-position="370">
+          <caret line="99" column="66" selection-start-line="99" selection-start-column="66" selection-end-line="99" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logging/.circleci/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="33" column="108" selection-start-line="33" selection-start-column="108" selection-end-line="33" selection-end-column="108" />
         </state>
       </provider>
     </entry>
@@ -495,10 +505,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logging/logcli/cli_test.go">
+    <entry file="file://$PROJECT_DIR$/../../.circleci/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="99" column="66" lean-forward="true" selection-start-line="99" selection-start-column="66" selection-end-line="99" selection-end-column="66" />
+        <state relative-caret-position="630">
+          <caret line="35" column="48" lean-forward="true" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logging/go.mod">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logging/service/logging_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
