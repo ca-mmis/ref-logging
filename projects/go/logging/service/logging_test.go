@@ -1,6 +1,7 @@
 package logging
 
 import (
+	"os"
 	"testing"
 )
 
@@ -14,8 +15,8 @@ func TestMetricsInvalidAWSCredentials(t *testing.T) {
 func TestMetricsWithCredentials(t *testing.T) {
 	session := SessionConfig{
 		SessionRegion:    "us-west-2",
-		SessionAccessKey: "AKIASNTCPJTD7OHTECEV",
-		SessionSecretKey: "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",
+		SessionAccessKey: os.Getenv("TEST_AWS_ACCESS_KEY"),
+		SessionSecretKey: os.Getenv("TEST_AWS_SECRET_ACCESS_KEY"),
 	}
 	metrics, err := MetricsWithCredentials(session)
 	if err != nil {
