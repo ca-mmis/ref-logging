@@ -1,5 +1,8 @@
 package logcli
 
+// Using CLI package from
+// https://github.com/urfave/cli
+
 import (
 	"fmt"
 	logging_service "github.com/ca-mmis/ref-logging/projects/go/logging/service"
