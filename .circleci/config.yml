@@ -66,7 +66,7 @@ jobs: # basic units of work in a run
             - "/go/pkg"
 
       - persist_to_workspace:
-          root: /tmp/test-results/coverage
+          root: coverage
           paths:
             - /tmp/test-results/coverage/codeclimate.*.json
 
@@ -87,7 +87,7 @@ jobs: # basic units of work in a run
 
     steps:
       - attach_workspace:
-          at: /tmp/test-results/coverage
+          at: coverage
       - run:
           name: Install Code Climate Test Reporter
           command: |
@@ -95,7 +95,7 @@ jobs: # basic units of work in a run
             chmod +x ./cc-test-reporter
       - run:
           command: |
-            ./cc-test-reporter sum-coverage --output - /tmp/test-results/coverage/codeclimate.*.json | ./cc-test-reporter upload-coverage --input -
+            ./cc-test-reporter sum-coverage --output - coverage/codeclimate.*.json | ./cc-test-reporter upload-coverage --input -
 
 workflows:
   version: 2
