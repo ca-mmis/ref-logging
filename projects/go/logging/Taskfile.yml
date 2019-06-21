@@ -1,0 +1,13 @@
+version: '2'
+
+tasks:
+  build:
+    deps: [test]
+    cmds:
+      - go build -v -i
+
+  test:
+    cmds:
+      - go fmt ./...
+      - go vet ./...
+      - go test -v -cover ./...
