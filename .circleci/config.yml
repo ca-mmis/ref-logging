@@ -56,7 +56,7 @@ jobs: # basic units of work in a run
       - run:
           name: Code Climate Test Coverage
           command: |
-            ./cc-test-reporter format-coverage -t simplecov -o "coverage/codeclimate.$CIRCLE_NODE_INDEX.json"
+            ./cc-test-reporter format-coverage -t gocov --prefix ~/project/projects/go/logging -o "${TEST_RESULTS}/coverage/codeclimate.$CIRCLE_NODE_INDEX.json"
 
       - save_cache: # Store cache in the /go/pkg directory
           key: v1-pkg-cache
@@ -64,7 +64,7 @@ jobs: # basic units of work in a run
             - "/go/pkg"
 
       - persist_to_workspace:
-          root: coverage
+          root: ${TEST_RESULTS}/coverage
           paths:
             - codeclimate.*.json
 
