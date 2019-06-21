@@ -41,14 +41,22 @@ func MetricsWithCredentials(config SessionConfig) (string, error) {
 	return execMetrics(sess, nil)
 }
 
+func MetricsWithSession(sess *session.Session) (string, error) {
+	return execMetrics(sess, nil)
+}
+
+func MetricsWithSessionAndFilter(sess *session.Session, filter MetricFilter) (string, error) {
+	return execMetrics(sess, &filter)
+}
+
 func execMetrics(sess *session.Session, filter *MetricFilter) (string, error) {
 	// Create CloudWatch client
 	svc := cloudwatch.New(sess)
 
 	var metricsInput = cloudwatch.ListMetricsInput{}
 	if filter != nil {
-		metricsInput.MetricName = filter.Name
-		metricsInput.Namespace = filter.Namespace
+		metricsInput.MetricName = &filter.Name
+		metricsInput.Namespace = &filter.Namespace
 	}
 	result, err := svc.ListMetrics(&metricsInput)
 	if err != nil {
