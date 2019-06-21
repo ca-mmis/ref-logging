@@ -43,7 +43,7 @@ jobs: # basic units of work in a run
       - run:
           name: Run tests
           command: |
-            ./cc-test-reporter before-build --prefix ~/project/projects/go/logging
+            ./cc-test-reporter before-build
             mkdir ~/.aws
             echo -e "[default]\naws_access_key_id=${AWS_ACCESS_KEY}\naws_secret_access_key=${AWS_SECRET_ACCESS_KEY}\n" > ~/.aws/credentials
             echo -e "[default]\nregion=us-west-2\noutput=json\n" > ~/.aws/config
