@@ -66,9 +66,9 @@ jobs: # basic units of work in a run
             - "/go/pkg"
 
       - persist_to_workspace:
-          root: ${TEST_RESULTS}/coverage
+          root: /tmp/test-results/coverage
           paths:
-            - ${TEST_RESULTS}/coverage/codeclimate.*.json
+            - /tmp/test-results/coverage/codeclimate.*.json
 
       - store_artifacts: # Upload test summary for display in Artifacts: https://circleci.com/docs/2.0/artifacts/
           path: /tmp/test-results
@@ -87,7 +87,7 @@ jobs: # basic units of work in a run
 
     steps:
       - attach_workspace:
-          at: coverage
+          at: /tmp/test-results/coverage
       - run:
           name: Install Code Climate Test Reporter
           command: |
@@ -95,8 +95,7 @@ jobs: # basic units of work in a run
             chmod +x ./cc-test-reporter
       - run:
           command: |
-            cd ~/project/projects/go/logging
-            cc-test-reporter sum-coverage --output - coverage/codeclimate.*.json | ../../../cc-test-reporter upload-coverage --input -
+            ./cc-test-reporter sum-coverage --output - /tmp/test-results/coverage/codeclimate.*.json | ./cc-test-reporter upload-coverage --input -
 
 workflows:
   version: 2
