@@ -56,7 +56,7 @@ jobs: # basic units of work in a run
       - run:
           name: Code Climate Test Coverage
           command: |
-            ./cc-test-reporter format-coverage --prefix ~/project/projects/go/logging -t simplecov -o "coverage/codeclimate.$CIRCLE_NODE_INDEX.json"
+            ./cc-test-reporter format-coverage -t simplecov -o "coverage/codeclimate.$CIRCLE_NODE_INDEX.json"
 
       - save_cache: # Store cache in the /go/pkg directory
           key: v1-pkg-cache
@@ -90,7 +90,7 @@ jobs: # basic units of work in a run
             chmod +x ./cc-test-reporter
       - run:
           command: |
-            ./cc-test-reporter sum-coverage --output --prefix ~/project/projects/go/logging - codeclimate.*.json | ./cc-test-reporter upload-coverage --debug --input -
+            ./cc-test-reporter sum-coverage --output - codeclimate.*.json | ./cc-test-reporter upload-coverage --debug --input -
 
 workflows:
   version: 2
