@@ -65,11 +65,6 @@ jobs: # basic units of work in a run
           paths:
             - "/go/pkg"
 
-      - persist_to_workspace:
-          root: ${TEST_RESULTS}/coverage
-          paths:
-            - codeclimate.*.json
-
       - store_artifacts: # Upload test summary for display in Artifacts: https://circleci.com/docs/2.0/artifacts/
           path: /tmp/test-results
           destination: raw-test-output
