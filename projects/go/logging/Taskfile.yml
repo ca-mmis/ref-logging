@@ -4,7 +4,7 @@ tasks:
   build:
     deps: [test]
     cmds:
-      - go build -v -i main.go
+      - go build -v -i
 
   test:
     cmds:
