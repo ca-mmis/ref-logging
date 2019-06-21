@@ -8,6 +8,6 @@ type SessionConfig struct {
 }
 
 type MetricFilter struct {
-	Name *string
+	Name      *string
 	Namespace *string
 }

@@ -14,7 +14,6 @@ import (
 
 var app = cli.NewApp()
 
-
 const Usage = "A CLI for the logging service"
 const Author = "Joe Chavez"
 const Version = "1.0.0"
@@ -43,13 +42,11 @@ func Exec(args []string) int {
 		return 1
 	}
 
-
 	err := app.Run(args)
 	if err != nil {
 		log.Fatal(err)
 		return 1
 	}
-
 
 	return 0
 }

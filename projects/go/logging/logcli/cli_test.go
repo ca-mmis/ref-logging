@@ -95,9 +95,9 @@ func TestExec(t *testing.T) {
 	//	[]string{"logcli.test", "invalid_arg"},
 	//}
 
-	tests = append(tests, TestStruct{ "Zero Args", zeroArgs, 1})
-	tests = append(tests, TestStruct{ "Exec Arg Only", execArgOnly, 0})
-	tests = append(tests, TestStruct{ "Version Arg", versionArg, 0})
+	tests = append(tests, TestStruct{"Zero Args", zeroArgs, 1})
+	tests = append(tests, TestStruct{"Exec Arg Only", execArgOnly, 0})
+	tests = append(tests, TestStruct{"Version Arg", versionArg, 0})
 	//tests = append(tests, TestStruct{ "Invalid Arg", invalidArg, 3})
 
 	for _, tt := range tests {
@@ -120,7 +120,7 @@ func Test_calcCompileTime(t *testing.T) {
 		name string
 		want time.Time
 	}{
-		{ "App Name", info.ModTime() },
+		{"App Name", info.ModTime()},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {

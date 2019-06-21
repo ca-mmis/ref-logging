@@ -46,7 +46,7 @@ func execMetrics(sess *session.Session, filter *MetricFilter) (string, error) {
 	svc := cloudwatch.New(sess)
 
 	var metricsInput = cloudwatch.ListMetricsInput{}
-	if(filter != nil) {
+	if filter != nil {
 		metricsInput.MetricName = filter.Name
 		metricsInput.Namespace = filter.Namespace
 	}
