@@ -53,22 +53,22 @@ jobs: # basic units of work in a run
             cd ~/project/projects/go/logging
             trap "go-junit-report <${TEST_RESULTS}/go-test.log > ${TEST_RESULTS}/go/results.xml" EXIT
             TEST_AWS_ACCESS_KEY=${AWS_ACCESS_KEY} TEST_AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY} ~/project/bin/task test | tee ${TEST_RESULTS}/go-test.log
-#      - run:
-#          name: Code Climate Test Coverage
-#          command: |
-#            mkdir -p ${TEST_RESULTS}/coverage
-#            cd ~/project/projects/go/logging
-#            ../../../cc-test-reporter -d format-coverage c.out -t gocov --prefix ~/project/projects/go/logging -o "${TEST_RESULTS}/coverage/codeclimate.$CIRCLE_NODE_INDEX.json"
+      - run:
+          name: Code Climate Test Coverage
+          command: |
+            mkdir -p ${TEST_RESULTS}/coverage
+            cd ~/project/projects/go/logging
+            ../../../cc-test-reporter format-coverage -t gocov --prefix githb.com/ca-mmis/ref-logging/projects/go/logging/ c.out -o "${TEST_RESULTS}/coverage/codeclimate.$CIRCLE_NODE_INDEX.json"
 
       - save_cache: # Store cache in the /go/pkg directory
           key: v1-pkg-cache
           paths:
             - "/go/pkg"
 
-#      - persist_to_workspace:
-#          root: ${TEST_RESULTS}/coverage
-#          paths:
-#            - codeclimate.*.json
+      - persist_to_workspace:
+          root: ${TEST_RESULTS}/coverage
+          paths:
+            - codeclimate.*.json
 
       - store_artifacts: # Upload test summary for display in Artifacts: https://circleci.com/docs/2.0/artifacts/
           path: /tmp/test-results
@@ -78,21 +78,22 @@ jobs: # basic units of work in a run
           path: /tmp/test-results
 
 
-#  upload-coverage:
-#    docker:
-#      - image: circleci/golang:1.12 #
-#    environment:
-#      CC_TEST_REPORTER_ID: ecacbd5c134cb7284722adfc8a9e06731c7d7e8eb469c492f6cd1c5e617d20eb
-#
-#    steps:
-#      - run:
-#          name: Install Code Climate Test Reporter
-#          command: |
-#            curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
-#            chmod +x ./cc-test-reporter
-#      - run:
-#          command: |
-#            ./cc-test-reporter sum-coverage --output - codeclimate.*.json | ./cc-test-reporter upload-coverage --debug --input -
+  upload-coverage:
+    docker:
+      - image: circleci/golang:1.12 #
+    environment:
+      CC_TEST_REPORTER_ID: ecacbd5c134cb7284722adfc8a9e06731c7d7e8eb469c492f6cd1c5e617d20eb
+
+    steps:
+      - run:
+          name: Install Code Climate Test Reporter
+          command: |
+            curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+            chmod +x ./cc-test-reporter
+      - run:
+          command: |
+            cd ~/project/projects/go/logging
+            ../../../cc-test-reporter sum-coverage --output - ${TEST_RESULTS}/coverage/codeclimate.*.json | ../../../cc-test-reporter upload-coverage --input -
 
 workflows:
   version: 2
@@ -100,6 +101,6 @@ workflows:
   commit:
     jobs:
       - build
-#      - upload-coverage:
-#          requires:
-#            - build
+      - upload-coverage:
+          requires:
+            - build

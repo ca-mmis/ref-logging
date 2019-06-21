@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="00d2b6d2-9073-48e9-a20c-3d9fce0f28d4" name="Default Changelist" comment="New test and refactoring">
+    <list default="true" id="00d2b6d2-9073-48e9-a20c-3d9fce0f28d4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../.circleci/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.circleci/config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logging/service/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/logging/service/config.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logging/service/logging.go" beforeDir="false" afterPath="$PROJECT_DIR$/logging/service/logging.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logging/service/logging_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/logging/service/logging_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logging/Taskfile.yml" beforeDir="false" afterPath="$PROJECT_DIR$/logging/Taskfile.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,16 +51,16 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/logging/service/logging.go">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="738">
-                  <caret line="48" column="30" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
+                <state relative-caret-position="270">
+                  <caret line="22" selection-start-line="22" selection-end-line="22" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/logging/service/config.go">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="234">
@@ -105,7 +104,7 @@
             <entry file="file://$PROJECT_DIR$/logging/Taskfile.yml">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="216">
-                  <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+                  <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
                 </state>
               </provider>
             </entry>
@@ -122,23 +121,20 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/../../.circleci/config.yml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="851">
-                  <caret line="71" selection-start-line="67" selection-end-line="71" />
+                <state relative-caret-position="-236">
+                  <caret line="8" column="18" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="18" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/logging/service/logging_test.go">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="498">
-                  <caret line="67" column="17" selection-start-line="67" selection-start-column="17" selection-end-line="67" selection-end-column="17" />
-                  <folding>
-                    <element signature="e#17#163#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="645">
+                  <caret line="66" column="17" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
                 </state>
               </provider>
             </entry>
@@ -179,6 +175,11 @@
   </component>
   <component name="GOROOT" path="/usr/local/Cellar/go/1.12.1/libexec" />
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Joe Chavez &lt;joe.chavez@dchs.ca.gov&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="IdeDocumentHistory">
@@ -206,10 +207,10 @@
         <option value="$PROJECT_DIR$/logging/.circleci/config.yml" />
         <option value="$PROJECT_DIR$/../../README.md" />
         <option value="$PROJECT_DIR$/logging/service/config.go" />
-        <option value="$PROJECT_DIR$/logging/service/logging.go" />
-        <option value="$PROJECT_DIR$/../../.circleci/config.yml" />
-        <option value="$PROJECT_DIR$/logging/Taskfile.yml" />
         <option value="$PROJECT_DIR$/logging/service/logging_test.go" />
+        <option value="$PROJECT_DIR$/logging/service/logging.go" />
+        <option value="$PROJECT_DIR$/logging/Taskfile.yml" />
+        <option value="$PROJECT_DIR$/../../.circleci/config.yml" />
       </list>
     </option>
   </component>
@@ -271,7 +272,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/logging" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -411,13 +412,12 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="23" width="3440" height="1417" extended-state="6" />
+    <frame x="0" y="23" width="3440" height="1417" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09711595" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09770453" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Messages" visible="true" weight="0.32981133" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32981133" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4997057" weight="0.32981133" />
@@ -427,9 +427,10 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32981133" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.32981133" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32981133" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50029427" side_tool="true" weight="0.32981133" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32981133" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -440,7 +441,11 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="Remove arg" />
     <MESSAGE value="Refactor aws creds creation." />
     <MESSAGE value="Fix test results path" />
@@ -449,7 +454,11 @@
     <MESSAGE value="Try adding a search directory" />
     <MESSAGE value="stub out CC" />
     <MESSAGE value="New test and refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="New test and refactoring" />
+    <MESSAGE value="MA-42 New test and refactoring #comment this a test comment" />
+    <option name="LAST_COMMIT_MESSAGE" value="MA-42 New test and refactoring #comment this a test comment" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -487,6 +496,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/logging/service/config.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/logging/go.mod">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -498,6 +514,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1674">
           <caret line="99" column="66" selection-start-line="99" selection-start-column="66" selection-end-line="99" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logging/service/logging.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
@@ -532,41 +555,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../.circleci/config.yml">
+    <entry file="file://$PROJECT_DIR$/logging/service/logging_test.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="851">
-          <caret line="71" selection-start-line="67" selection-end-line="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logging/service/logging.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="738">
-          <caret line="48" column="30" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logging/service/config.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="645">
+          <caret line="66" column="17" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/logging/Taskfile.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
-          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logging/service/logging_test.go">
+    <entry file="file://$PROJECT_DIR$/../../.circleci/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="67" column="17" selection-start-line="67" selection-start-column="17" selection-end-line="67" selection-end-column="17" />
-          <folding>
-            <element signature="e#17#163#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-236">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="18" />
         </state>
       </provider>
     </entry>
