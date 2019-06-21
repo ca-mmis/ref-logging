@@ -48,15 +48,17 @@ jobs: # basic units of work in a run
       - run:
           name: Run tests
           command: |
+            mkdir -p ${TEST_RESULTS}/go
             ./cc-test-reporter before-build
             cd ~/project/projects/go/logging
-            mkdir -p ${TEST_RESULTS}/go
-            trap "go-junit-report <${TEST_RESULTS}/go-test.out > ${TEST_RESULTS}/go/results.xml" EXIT
-            TEST_AWS_ACCESS_KEY=${AWS_ACCESS_KEY} TEST_AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY} ~/project/bin/task test | tee ${TEST_RESULTS}/go-test.out
+            trap "go-junit-report <${TEST_RESULTS}/go-test.log > ${TEST_RESULTS}/go/results.xml" EXIT
+            TEST_AWS_ACCESS_KEY=${AWS_ACCESS_KEY} TEST_AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY} ~/project/bin/task test | tee ${TEST_RESULTS}/go-test.log
       - run:
           name: Code Climate Test Coverage
           command: |
-            ./cc-test-reporter -d format-coverage -t simplecov --add-prefix ${TEST_RESULTS}/go -o "coverage/codeclimate.$CIRCLE_NODE_INDEX.json"
+            mkdir -p ${TEST_RESULTS}/coverage
+            cd ~/project/projects/go/logging
+            ../../../cc-test-reporter -d format-coverage ${TEST_RESULTS}/go/results.xml -t simplecov --prefix ~/project/projects/go/logging -o "${TEST_RESULTS}/coverage/codeclimate.$CIRCLE_NODE_INDEX.json"
 
       - save_cache: # Store cache in the /go/pkg directory
           key: v1-pkg-cache
