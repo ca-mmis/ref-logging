@@ -58,7 +58,7 @@ jobs: # basic units of work in a run
           command: |
             mkdir -p ${TEST_RESULTS}/coverage
             cd ~/project/projects/go/logging
-            ../../../cc-test-reporter format-coverage -t gocov --prefix githb.com/ca-mmis/ref-logging/projects/go/logging/ c.out -o "${TEST_RESULTS}/coverage/codeclimate.$CIRCLE_NODE_INDEX.json"
+            ../../../cc-test-reporter format-coverage -t gocov --prefix github.com/ca-mmis/ref-logging/projects/go/logging/ c.out -o "${TEST_RESULTS}/coverage/codeclimate.$CIRCLE_NODE_INDEX.json"
 
       - save_cache: # Store cache in the /go/pkg directory
           key: v1-pkg-cache
