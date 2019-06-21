@@ -66,7 +66,7 @@ jobs: # basic units of work in a run
             - "/go/pkg"
 
       - persist_to_workspace:
-          root: coverage
+          root: ${TEST_RESULTS}/coverage
           paths:
             - ${TEST_RESULTS}/coverage/codeclimate.*.json
 
