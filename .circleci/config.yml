@@ -21,25 +21,49 @@ jobs: # basic units of work in a run
       # we've added it here for the sake of explanation.
       - run: go get github.com/jstemmer/go-junit-report
 
+      - run:
+          name: Install Code Climate Test Reporter
+          command: |
+            curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+            chmod +x ./cc-test-reporter
+
       # install Task builder
       - run: curl -sL https://taskfile.dev/install.sh | sh
 
       - run:
-          name: Run unit tests and build
+          name: Run build
           # Store the results of our tests in the $TEST_RESULTS directory
           command: |
             mkdir ~/.aws
             echo -e "[default]\naws_access_key_id=${AWS_ACCESS_KEY}\naws_secret_access_key=${AWS_SECRET_ACCESS_KEY}\n" > ~/.aws/credentials
             echo -e "[default]\nregion=us-west-2\noutput=json\n" > ~/.aws/config
             cd ~/project/projects/go/logging
+            TEST_AWS_ACCESS_KEY=${AWS_ACCESS_KEY} TEST_AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY} ~/project/bin/task build
+
+      - run:
+          name: Run tests
+          command: |
+            ./cc-test-reporter before-build --prefix ~/project/projects/go/logging
+            mkdir ~/.aws
+            echo -e "[default]\naws_access_key_id=${AWS_ACCESS_KEY}\naws_secret_access_key=${AWS_SECRET_ACCESS_KEY}\n" > ~/.aws/credentials
+            echo -e "[default]\nregion=us-west-2\noutput=json\n" > ~/.aws/config
+            cd ~/project/projects/go/logging
             mkdir -p ${TEST_RESULTS}/go
-            trap "go-junit-report <${TEST_RESULTS}/go-test.out > ${TEST_RESULTS}/go/results.xml" EXIT
-            TEST_AWS_ACCESS_KEY=${AWS_ACCESS_KEY} TEST_AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY} ~/project/bin/task build | tee ${TEST_RESULTS}/go-test.out
+            TEST_AWS_ACCESS_KEY=${AWS_ACCESS_KEY} TEST_AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY} ~/project/bin/task test
+      - run:
+          name: Code Climate Test Coverage
+          command: |
+            ./cc-test-reporter format-coverage --prefix ~/project/projects/go/logging -t simplecov -o "coverage/codeclimate.$CIRCLE_NODE_INDEX.json"
 
       - save_cache: # Store cache in the /go/pkg directory
           key: v1-pkg-cache
           paths:
             - "/go/pkg"
+
+      - persist_to_workspace:
+          root: coverage
+          paths:
+            - codeclimate.*.json
 
       - store_artifacts: # Upload test summary for display in Artifacts: https://circleci.com/docs/2.0/artifacts/
           path: /tmp/test-results
@@ -47,3 +71,30 @@ jobs: # basic units of work in a run
 
       - store_test_results: # Upload test results for display in Test Summary: https://circleci.com/docs/2.0/collect-test-data/
           path: /tmp/test-results
+
+
+  upload-coverage:
+    docker:
+      - image: circleci/golang:1.12 #
+    environment:
+      CC_TEST_REPORTER_ID: ecacbd5c134cb7284722adfc8a9e06731c7d7e8eb469c492f6cd1c5e617d20eb
+
+    steps:
+      - run:
+          name: Install Code Climate Test Reporter
+          command: |
+            curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+            chmod +x ./cc-test-reporter
+      - run:
+          command: |
+            ./cc-test-reporter sum-coverage --output --prefix ~/project/projects/go/logging - codeclimate.*.json | ./cc-test-reporter upload-coverage --debug --input -
+
+workflows:
+  version: 2
+
+  commit:
+    jobs:
+      - build
+      - upload-coverage:
+          requires:
+            - build

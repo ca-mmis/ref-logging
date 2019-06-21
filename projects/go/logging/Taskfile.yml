@@ -2,7 +2,6 @@ version: '2'
 
 tasks:
   build:
-    deps: [test]
     cmds:
       - go build -v -i
 
