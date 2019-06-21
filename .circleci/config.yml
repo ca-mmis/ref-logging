@@ -10,7 +10,11 @@ jobs: # basic units of work in a run
 
     steps: # steps that comprise the `build` job
       - checkout # check out source code to working directory
-      - run: mkdir -p $TEST_RESULTS # create the test results directory
+      - run:
+          name: Make build directories
+          command: |
+            mkdir -p $TEST_RESULTS # create the test results directory
+            mkdir -p ${TEST_RESULTS}/go
 
       - restore_cache: # restores saved cache if no changes are detected since last run
           # Read about caching dependencies: https://circleci.com/docs/2.0/caching/
@@ -49,7 +53,6 @@ jobs: # basic units of work in a run
       - run:
           name: Run tests
           command: |
-            mkdir -p ${TEST_RESULTS}/go
             ./cc-test-reporter before-build
             cd ~/project/projects/go/logging
             trap "go-junit-report <${TEST_RESULTS}/go-test.log > ${TEST_RESULTS}/go/results.xml" EXIT
