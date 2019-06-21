@@ -43,7 +43,8 @@ jobs: # basic units of work in a run
           # Store the results of our tests in the $TEST_RESULTS directory
           command: |
             cd ~/project/projects/go/logging
-            TEST_AWS_ACCESS_KEY=${AWS_ACCESS_KEY} TEST_AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY} ~/project/bin/task build
+            trap "go-junit-report <${TEST_RESULTS}/go-test.log > ${TEST_RESULTS}/go/results.xml" EXIT
+            TEST_AWS_ACCESS_KEY=${AWS_ACCESS_KEY} TEST_AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY} ~/project/bin/task build | tee ${TEST_RESULTS}/go-test.log
 
       - run:
           name: Run tests
