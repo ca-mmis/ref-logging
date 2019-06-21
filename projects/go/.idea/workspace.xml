@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="00d2b6d2-9073-48e9-a20c-3d9fce0f28d4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../.circleci/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.circleci/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logging/Taskfile.yml" beforeDir="false" afterPath="$PROJECT_DIR$/logging/Taskfile.yml" afterDir="false" />
-    </list>
+    <list default="true" id="00d2b6d2-9073-48e9-a20c-3d9fce0f28d4" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,8 +120,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/../../.circleci/config.yml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-236">
-                  <caret line="8" column="18" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="18" />
+                <state relative-caret-position="700">
+                  <caret line="60" selection-start-line="60" selection-end-line="60" />
                 </state>
               </provider>
             </entry>
@@ -455,7 +451,9 @@
     <MESSAGE value="stub out CC" />
     <MESSAGE value="New test and refactoring" />
     <MESSAGE value="MA-42 New test and refactoring #comment this a test comment" />
-    <option name="LAST_COMMIT_MESSAGE" value="MA-42 New test and refactoring #comment this a test comment" />
+    <MESSAGE value="MA-42 Maybe have CC configured correctly" />
+    <MESSAGE value="MA-42 fix typo" />
+    <option name="LAST_COMMIT_MESSAGE" value="MA-42 fix typo" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -571,8 +569,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../.circleci/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-236">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="18" />
+        <state relative-caret-position="700">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
         </state>
       </provider>
     </entry>
