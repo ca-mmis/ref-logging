@@ -32,7 +32,7 @@ jobs: # basic units of work in a run
             echo -e "[default]\naws_access_key_id=${AWS_ACCESS_KEY}\naws_secret_access_key=${AWS_SECRET_ACCESS_KEY}\n" > ~/.aws/credentials
             echo -e "[default]\nregion=us-west-2\noutput=json\n" > ~/.aws/config
             cd ~/project/projects/go/logging
-            trap "go-junit-report <${TEST_RESULTS}/go-test.out > ${TEST_RESULTS}/go-test-report.xml" EXIT
+            trap "go-junit-report <${TEST_RESULTS}/go-test.out > ${TEST_RESULTS}/junit/results.xml" EXIT
             TEST_AWS_ACCESS_KEY=${AWS_ACCESS_KEY} TEST_AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY} ~/project/bin/task build | tee ${TEST_RESULTS}/go-test.out
 
       - save_cache: # Store cache in the /go/pkg directory
