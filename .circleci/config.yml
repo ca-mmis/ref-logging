@@ -56,9 +56,8 @@ jobs: # basic units of work in a run
       - run:
           name: Code Climate Test Coverage
           command: |
-            mkdir -p ${TEST_RESULTS}/coverage
             cd ~/project/projects/go/logging
-            ../../../cc-test-reporter format-coverage -t gocov --prefix github.com/ca-mmis/ref-logging/projects/go/logging/ c.out -o "${TEST_RESULTS}/coverage/codeclimate.$CIRCLE_NODE_INDEX.json"
+            ../../../cc-test-reporter format-coverage -t gocov --prefix github.com/ca-mmis/ref-logging/projects/go/logging/ c.out -o "coverage/codeclimate.$CIRCLE_NODE_INDEX.json"
 
       - save_cache: # Store cache in the /go/pkg directory
           key: v1-pkg-cache
@@ -68,7 +67,7 @@ jobs: # basic units of work in a run
       - persist_to_workspace:
           root: coverage
           paths:
-            - /tmp/test-results/coverage/codeclimate.*.json
+            - codeclimate.*.json
 
       - store_artifacts: # Upload test summary for display in Artifacts: https://circleci.com/docs/2.0/artifacts/
           path: /tmp/test-results
